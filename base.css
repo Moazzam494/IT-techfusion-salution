@@ -1,0 +1,40 @@
+
+:root {
+  --bg-dark: #0b0f2b;
+  --text-light: #fff;
+  --text-muted: #d1d5db;
+  --purple: #6a11cb;
+  --blue: #2575fc;
+  --card-bg: #141d3a;
+  --gradient: linear-gradient(90deg, #6a11cb, #2575fc);
+  --primary-purple-dark: #2a005a;
+  --primary-purple-light: #4c0099;
+  --secondary-purple-gradient-start: #6a11cb;
+  --secondary-purple-gradient-end: #2575fc;
+  --text-color-light: #ffffff;
+  --text-color-muted: #e0e0e0;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --header-height: 80px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color-light);
+    background-color: var(--primary-purple-dark); 
+    background: linear-gradient(135deg, var(--primary-purple-dark) 0%, #4a007f 100%);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+ html {
+      scroll-behavior: smooth;
+    }
