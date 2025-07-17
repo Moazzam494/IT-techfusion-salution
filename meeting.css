@@ -1,0 +1,146 @@
+
+.consultation {
+  background:#0F172B;
+  padding: 80px 20px;
+  color: var(--text-light);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.consultation__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.consultation__title {
+  font-size: 1.7rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.consultation__subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.consultation__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.consultation__info {
+  background: linear-gradient(135deg, #2a0a4c, #001d3d);
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.consultation__info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.consultation__benefits li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  list-style: none;
+}
+
+.consultation__process {
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.consultation__process h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.consultation__process ol {
+  padding-left: 20px;
+}
+
+.consultation__process li {
+  margin-bottom: 10px;
+}
+
+.consultation__form {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.consultation__form input,
+.consultation__form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #1e2a48;
+  color: var(--text-light);
+  font-size: 1rem;
+  resize: none;
+}
+
+.consultation__form input::placeholder,
+.consultation__form textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.consultation__datetime {
+  display: flex;
+  gap: 10px;
+}
+
+.consultation__datetime input {
+  flex: 1;
+}
+
+.consultation__form button {
+  background: var(--gradient);
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.consultation__form button:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .consultation__content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .consultation__info,
+  .consultation__form {
+    max-width: 100%;
+  }
+
+  .consultation__title {
+    font-size: 2rem;
+  }
+
+  .consultation__subtitle {
+    font-size: 0.95rem;
+  }
+}
